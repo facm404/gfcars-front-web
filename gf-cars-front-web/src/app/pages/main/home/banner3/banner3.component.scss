@@ -1,0 +1,92 @@
+.banner3-container {
+  width: 100%;
+  padding: 3rem 2rem;
+  background-color: white;
+}
+
+.banner3-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.banner3-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  line-height: 1.2;
+  font-family: 'Arial', sans-serif;
+}
+
+.view-all-link {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Arial', sans-serif;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+
+  &:hover {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .arrow {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+}
+
+// Responsive Design
+@media (max-width: 1200px) {
+  .banner3-title {
+    font-size: 2.5rem;
+  }
+
+  .view-all-link {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .banner3-container {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .banner3-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .banner3-title {
+    font-size: 2.25rem;
+  }
+
+  .view-all-link {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner3-container {
+    padding: 2rem 1rem;
+  }
+
+  .banner3-title {
+    font-size: 1.75rem;
+  }
+
+  .view-all-link {
+    font-size: 1rem;
+  }
+}
+

@@ -1,0 +1,183 @@
+.download-app-container {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.download-app-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+// Left Column: Text and Download Buttons
+.download-text-section {
+  flex: 1;
+  max-width: 600px;
+
+  .download-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.2;
+  }
+
+  .download-description {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .download-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    .store-button {
+      display: inline-block;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        opacity: 0.9;
+      }
+
+      img {
+        height: 60px;
+        width: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+// Right Column: Smartphone Image
+.download-image-section {
+  flex: 0 0 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .phone-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+// Responsive Design
+@media (max-width: 1200px) {
+  .download-app-content {
+    gap: 3rem;
+  }
+
+  .download-text-section {
+    .download-title {
+      font-size: 2.5rem;
+    }
+
+    .download-description {
+      font-size: 1rem;
+    }
+  }
+
+  .download-image-section {
+    flex: 0 0 40%;
+
+    .phone-image {
+      max-width: 350px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .download-app-container {
+    padding: 3rem 1.5rem;
+  }
+
+  .download-app-content {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .download-text-section {
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+
+    .download-title {
+      font-size: 2.25rem;
+    }
+
+    .download-description {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .download-buttons {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .download-image-section {
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+
+    .phone-image {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .download-app-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .download-text-section {
+    .download-title {
+      font-size: 1.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .download-description {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .download-buttons {
+      flex-direction: column;
+      gap: 0.75rem;
+
+      .store-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+          height: 50px;
+        }
+      }
+    }
+  }
+
+  .download-image-section {
+    .phone-image {
+      max-width: 300px;
+    }
+  }
+}
+

@@ -1,0 +1,211 @@
+.facts-container {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.facts-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 4rem 3rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+// Header Section
+.facts-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  .facts-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.2;
+  }
+
+  .facts-description {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial', sans-serif;
+  }
+}
+
+// Numbers Cards
+.facts-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.fact-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  .fact-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #dc143c;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .fact-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 0.5rem 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.2;
+  }
+
+  .fact-label {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.4;
+  }
+}
+
+// Responsive Design
+@media (max-width: 1200px) {
+  .facts-content {
+    padding: 3.5rem 2.5rem;
+  }
+
+  .facts-header {
+    .facts-title {
+      font-size: 2.5rem;
+    }
+
+    .facts-description {
+      font-size: 1rem;
+    }
+  }
+
+  .facts-cards {
+    gap: 1.5rem;
+  }
+
+  .fact-card {
+    padding: 2rem 1.5rem;
+
+    .fact-icon {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 1.25rem;
+    }
+
+    .fact-number {
+      font-size: 2rem;
+    }
+
+    .fact-label {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .facts-container {
+    padding: 3rem 1.5rem;
+  }
+
+  .facts-content {
+    padding: 3rem 2rem;
+  }
+
+  .facts-header {
+    margin-bottom: 2.5rem;
+
+    .facts-title {
+      font-size: 2.25rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .facts-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .fact-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .facts-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .facts-content {
+    padding: 2.5rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .facts-header {
+    margin-bottom: 2rem;
+
+    .facts-title {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .facts-description {
+      font-size: 0.95rem;
+    }
+  }
+
+  .facts-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .fact-card {
+    padding: 2rem 1.5rem;
+
+    .fact-icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .fact-number {
+      font-size: 1.75rem;
+    }
+
+    .fact-label {
+      font-size: 0.95rem;
+    }
+  }
+}
+
