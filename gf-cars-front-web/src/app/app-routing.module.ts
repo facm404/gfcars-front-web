@@ -10,6 +10,14 @@ const routes: Routes = [
 {
   path: '',
   loadChildren: () => import('./pages/main/main-routing.module').then(m => m.MainRoutingModule)
+},
+{
+  path: 'main',
+  loadChildren: () => import('./pages/main/main.module').then(m => m.MainModule)
+},
+{
+  path: '**',
+  redirectTo: 'main'
 }
 ];
 

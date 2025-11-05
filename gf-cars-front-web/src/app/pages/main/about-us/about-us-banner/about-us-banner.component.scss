@@ -1,0 +1,300 @@
+.about-us-banner-container {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+// Header Section: Title and Breadcrumbs
+.header-section {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  .page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.2;
+  }
+
+  .breadcrumbs {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #999;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+}
+
+// Main Content Section: Slogan and Features
+.main-content-section {
+  margin-bottom: 4rem;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.slogan-column {
+  .slogan {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+  }
+}
+
+.features-column {
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .feature-item {
+    .feature-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 0.75rem;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.3;
+    }
+
+    .feature-description {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+  }
+}
+
+// Video Section
+.video-section {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(4px);
+  }
+
+  .play-button {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    svg {
+      display: block;
+    }
+  }
+}
+
+// Statistics Section
+.statistics-section {
+  margin-bottom: 2rem;
+}
+
+.statistics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+
+  .stat-item {
+    .stat-number {
+      font-size: 4rem;
+      font-weight: 700;
+      color: #6C63FF;
+      margin-bottom: 0.5rem;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #333;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 1200px) {
+  .content-wrapper {
+    gap: 3rem;
+  }
+
+  .slogan-column {
+    .slogan {
+      font-size: 2.5rem;
+    }
+  }
+
+  .features-column {
+    .features-grid {
+      gap: 1.5rem;
+    }
+
+    .feature-item {
+      .feature-title {
+        font-size: 1.3rem;
+      }
+
+      .feature-description {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  .statistics-grid {
+    gap: 2rem;
+
+    .stat-item {
+      .stat-number {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us-banner-container {
+    padding: 3rem 1.5rem;
+  }
+
+  .header-section {
+    margin-bottom: 3rem;
+
+    .page-title {
+      font-size: 2.5rem;
+    }
+  }
+
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .slogan-column {
+    text-align: center;
+
+    .slogan {
+      font-size: 2.25rem;
+    }
+  }
+
+  .features-column {
+    .features-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .video-container {
+    height: 400px;
+  }
+
+  .statistics-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-banner-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .header-section {
+    margin-bottom: 2.5rem;
+
+    .page-title {
+      font-size: 2rem;
+    }
+
+    .breadcrumbs {
+      font-size: 0.9rem;
+    }
+  }
+
+  .slogan-column {
+    .slogan {
+      font-size: 1.75rem;
+    }
+  }
+
+  .features-column {
+    .feature-item {
+      .feature-title {
+        font-size: 1.2rem;
+      }
+
+      .feature-description {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .video-container {
+    height: 300px;
+    border-radius: 12px;
+
+    .play-button {
+      svg {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  .statistics-grid {
+    .stat-item {
+      .stat-number {
+        font-size: 3rem;
+      }
+
+      .stat-label {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
