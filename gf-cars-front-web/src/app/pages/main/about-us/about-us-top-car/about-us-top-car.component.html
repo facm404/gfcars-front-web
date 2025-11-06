@@ -1,1 +1,70 @@
-<p>about-us-top-car works!</p>
+<div class="about-us-top-car-container">
+    <h1 class="faq-title">Top Car Rental Questions</h1>
+    
+    <div class="accordion">
+        <!-- Question 1 (Open) -->
+        <div class="accordion-item" [class.active]="openIndex === 0">
+            <div class="accordion-header" (click)="toggleAccordion(0)">
+                <h3 class="question-text">How does it works?</h3>
+                <span class="caret-icon" [class.rotated]="openIndex === 0">^</span>
+            </div>
+            <div class="accordion-content" [class.show]="openIndex === 0">
+                <p class="answer-text">
+                    Imperdiet ut tristique viverra nunc. Ultrices orci vel auctor cursus turpis nibh placerat massa. Fermentum urna ut at et in. Turpis aliquet cras hendrerit enim condimentum. Condimentum interdum risus bibendum urna. Augue aliquet varius faucibus ut integer tristique ut. Pellentesque id nibh sed nulla non nulla
+                </p>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item" [class.active]="openIndex === 1">
+            <div class="accordion-header" (click)="toggleAccordion(1)">
+                <h3 class="question-text">Can I rent a car without a credit card?</h3>
+                <span class="caret-icon" [class.rotated]="openIndex === 1">^</span>
+            </div>
+            <div class="accordion-content" [class.show]="openIndex === 1">
+                <p class="answer-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item" [class.active]="openIndex === 2">
+            <div class="accordion-header" (click)="toggleAccordion(2)">
+                <h3 class="question-text">What are the requirements for renting a car?</h3>
+                <span class="caret-icon" [class.rotated]="openIndex === 2">^</span>
+            </div>
+            <div class="accordion-content" [class.show]="openIndex === 2">
+                <p class="answer-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="accordion-item" [class.active]="openIndex === 3">
+            <div class="accordion-header" (click)="toggleAccordion(3)">
+                <h3 class="question-text">Does Car Rental allow me to tow with or attach a hitch to the rental vehicle?</h3>
+                <span class="caret-icon" [class.rotated]="openIndex === 3">^</span>
+            </div>
+            <div class="accordion-content" [class.show]="openIndex === 3">
+                <p class="answer-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="accordion-item" [class.active]="openIndex === 4">
+            <div class="accordion-header" (click)="toggleAccordion(4)">
+                <h3 class="question-text">Does Car Rental offer coverage products for purchase with my rental?</h3>
+                <span class="caret-icon" [class.rotated]="openIndex === 4">^</span>
+            </div>
+            <div class="accordion-content" [class.show]="openIndex === 4">
+                <p class="answer-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

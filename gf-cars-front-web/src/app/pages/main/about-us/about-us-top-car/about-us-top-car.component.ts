@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-us-top-car.component.scss']
 })
 export class AboutUsTopCarComponent {
+  openIndex: number = 0; // First item is open by default
 
+  toggleAccordion(index: number): void {
+    if (this.openIndex === index) {
+      this.openIndex = -1; // Close if already open
+    } else {
+      this.openIndex = index; // Open the clicked item
+    }
+  }
 }
