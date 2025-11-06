@@ -1,0 +1,200 @@
+.about-us-banner2-container {
+  width: 100%;
+  padding: 2rem;
+  background-color: white;
+}
+
+.banner2-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 3rem;
+  background-image: url('/assets/imagenes/banner03.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  overflow: hidden;
+  min-height: 400px;
+
+  // Overlay sutil para mejorar legibilidad del texto
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.2) 50%,
+      transparent 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+// Left Section: Text Content
+.text-section {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 50%;
+  max-width: 600px;
+  color: white;
+
+  .main-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.2;
+  }
+
+  .phone-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .book-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+
+    &:hover {
+      background-color: #FF5722;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}
+
+
+// Responsive Design
+@media (max-width: 1200px) {
+  .banner2-content {
+    padding: 3.5rem 2.5rem;
+    min-height: 350px;
+  }
+
+  .text-section {
+    .main-heading {
+      font-size: 2.5rem;
+    }
+
+    .phone-number {
+      font-size: 2rem;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+
+    .book-button {
+      padding: 0.9rem 2rem;
+      font-size: 1rem;
+    }
+  }
+
+}
+
+@media (max-width: 992px) {
+  .about-us-banner2-container {
+    padding: 1.5rem;
+  }
+
+  .banner2-content {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .text-section {
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+
+    .main-heading {
+      font-size: 2.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .phone-number {
+      font-size: 1.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .description {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .about-us-banner2-container {
+    padding: 1rem;
+  }
+
+  .banner2-content {
+    padding: 2.5rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .text-section {
+    .main-heading {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .phone-number {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .book-button {
+      padding: 0.85rem 1.75rem;
+      font-size: 0.95rem;
+      border-radius: 10px;
+    }
+  }
+
+}
+

@@ -9,6 +9,11 @@ import { AboutUsDownloadComponent } from './about-us/about-us-download/about-us-
 import { AboutUsReviewComponent } from './about-us/about-us-review/about-us-review.component';
 import { AboutUsTopCarComponent } from './about-us/about-us-top-car/about-us-top-car.component';
 import { AboutUsUnlockComponent } from './about-us/about-us-unlock/about-us-unlock.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { Banner1Component } from './contact-us/banner1/banner1.component';
+import { InfoComponent } from './contact-us/info/info.component';
+import { BlogComponent } from './contact-us/blog/blog.component';
+import { LogosComponent } from './contact-us/logos/logos.component';
 
 @NgModule({
     declarations: [
@@ -19,6 +24,11 @@ import { AboutUsUnlockComponent } from './about-us/about-us-unlock/about-us-unlo
     AboutUsReviewComponent,
     AboutUsTopCarComponent,
     AboutUsUnlockComponent,
+    ContactUsComponent,
+    Banner1Component,
+    InfoComponent,
+    BlogComponent,
+    LogosComponent,
   ],
     imports: [
         CommonModule,

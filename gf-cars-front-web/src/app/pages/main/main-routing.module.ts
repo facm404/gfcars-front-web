@@ -8,6 +8,7 @@ import { VehiclesMainComponent } from './vehicles/vehicles-main/vehicles-main.co
 import { AllVehiclesComponent } from './vehicles/vehicles-main/all-vehicles/all-vehicles.component';
 import { DetailVehiclesComponent } from './vehicles/vehicles-main/detail-vehicles/detail-vehicles.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,8 @@ const routes: Routes = [
     ]
   },
   { path: 'about-us', component: AboutUsComponent },
+  { path: 'contact-us', component: ContactUsComponent },
+
   { path: '**', redirectTo: 'home' },
 ];
 
