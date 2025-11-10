@@ -1,1 +1,55 @@
-<p>all-vehicles works!</p>
+<div class="all-vehicles-container">
+  <article class="vehicle-card" *ngFor="let vehicle of vehicles">
+    <div class="vehicle-card__media">
+      <img
+        class="vehicle-card__image"
+        [src]="vehicle.image[0]"
+        [alt]="vehicle.make + ' ' + vehicle.model"
+      />
+    </div>
+
+    <div class="vehicle-card__content">
+      <header class="vehicle-card__header">
+        <div class="vehicle-card__titles">
+          <h2 class="vehicle-card__make">{{ vehicle.make }}</h2>
+          <p class="vehicle-card__model">{{ vehicle.model }}</p>
+        </div>
+        <div class="vehicle-card__price">
+          <span class="vehicle-card__price-amount">
+            {{ vehicle.specifications.price | currency:'USD':'symbol-narrow':'1.0-0' }}
+          </span>
+          <span class="vehicle-card__price-note">por día</span>
+        </div>
+      </header>
+
+      <ul class="vehicle-card__specs">
+        <li>
+          <span class="vehicle-card__spec-label">Motor</span>
+          <span class="vehicle-card__spec-value">{{ vehicle.specifications.engine }}</span>
+        </li>
+        <li>
+          <span class="vehicle-card__spec-label">Puertas</span>
+          <span class="vehicle-card__spec-value">{{ vehicle.specifications.doors }}</span>
+        </li>
+        <li>
+          <span class="vehicle-card__spec-label">Asientos</span>
+          <span class="vehicle-card__spec-value">{{ vehicle.specifications.seats }}</span>
+        </li>
+        <li>
+          <span class="vehicle-card__spec-label">Potencia</span>
+          <span class="vehicle-card__spec-value">{{ vehicle.specifications.horsepower }} HP</span>
+        </li>
+      </ul>
+
+      <div class="vehicle-card__features">
+        <span>{{ vehicle.specifications.transmission }}</span>
+        <span>{{ vehicle.specifications.fuel }}</span>
+        <span *ngIf="vehicle.equipment.length">{{ vehicle.equipment[0] }}</span>
+      </div>
+    </div>
+
+    <button class="vehicle-card__cta" type="button" (click)="goToDetail(vehicle)">
+      Ver detalles
+    </button>
+  </article>
+</div>

@@ -1,0 +1,155 @@
+{
+    "models": [
+        {
+            "id": 1,
+            "make": "Tesla",
+            "model": "Model 3",
+            "image": [
+                "assets/imagenes/vehicles/main/tesla1.png"
+            ],
+            "specifications": {
+                "engine": "2.5L",
+                "transmission": "Automatic",
+                "fuel": "Gasoline",
+                "doors": 4,
+                "seats": 5,
+                "distance": 200000,
+                "horsepower": 203,
+                "price": 25000
+            },
+            "equipment": [
+                "ABS",
+                "Air Bags",
+                "Air Conditioning",
+                "Cruise Control",
+                "Navigation System"
+            ]
+        },
+        {
+            "id": 2,
+            "make": "Mercedez",
+            "model": "Sport",
+            "image": [
+                "assets/imagenes/vehicles/main/mercedez2.png"
+            ],
+            "specifications": {
+                "engine": "2.5L",
+                "transmission": "Automatic",
+                "fuel": "Gasoline",
+                "doors": 4,
+                "seats": 5,
+                "distance": 200000,
+                "horsepower": 203,
+                "price": 50000
+            },
+            "equipment": [
+                "ABS",
+                "Air Bags",
+                "Air Conditioning",
+                "Cruise Control",
+                "Navigation System"
+            ]
+        },
+        {
+            "id": 3,
+            "make": "Porsche",
+            "model": "Sedan",
+            "image": [
+                "assets/imagenes/vehicles/main/porsche.png"
+            ],
+            "specifications": {
+                "engine": "2.5L",
+                "transmission": "Automatic",
+                "fuel": "Gasoline",
+                "doors": 4,
+                "seats": 5,
+                "distance": 200000,
+                "horsepower": 203,
+                "price": 45000
+            },
+            "equipment": [
+                "ABS",
+                "Air Bags",
+                "Air Conditioning",
+                "Cruise Control",
+                "Navigation System"
+            ]
+        },
+        {
+            "id": 4,
+            "make": "Ford",
+            "model": "Camaro",
+            "image": [
+                "assets/imagenes/vehicles/main/ford.png"
+            ],
+            "specifications": {
+                "engine": "2.5L",
+                "transmission": "Automatic",
+                "fuel": "Gasoline",
+                "doors": 4,
+                "seats": 5,
+                "distance": 200000,
+                "horsepower": 203,
+                "price": 40000
+            },
+            "equipment": [
+                "ABS",
+                "Air Bags",
+                "Air Conditioning",
+                "Cruise Control",
+                "Navigation System"
+            ]
+        },
+        {
+            "id": 5,
+            "make": "Mercedez",
+            "model": "CLA",
+            "image": [
+                "assets/imagenes/vehicles/main/mercedez1.png"
+            ],
+            "specifications": {
+                "engine": "2.5L",
+                "transmission": "Automatic",
+                "fuel": "Gasoline",
+                "doors": 4,
+                "seats": 5,
+                "distance": 200000,
+                "horsepower": 203,
+                "price": 35000
+            },
+            "equipment": [
+                "ABS",
+                "Air Bags",
+                "Air Conditioning",
+                "Cruise Control",
+                "Navigation System"
+            ]
+        },
+        {
+            "id": 6,
+            "make": "Tesla",
+            "model": "Model X",
+            "image": [
+                "assets/imagenes/vehicles/main/tesla2.png"
+            ],
+            "specifications": {
+                "engine": "2.5L",
+                "transmission": "Automatic",
+                "fuel": "Gasoline",
+                "doors": 4,
+                "seats": 5,
+                "distance": 200000,
+                "horsepower": 203,
+                "price": 50000
+            },
+            "equipment": [
+                "ABS",
+                "Air Bags",
+                "Air Conditioning",
+                "Cruise Control",
+                "Navigation System"
+            ]
+        }
+        
+    ]
+}

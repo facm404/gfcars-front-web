@@ -1,1 +1,64 @@
-<p>detail-vehicles works!</p>
+<section class="vehicle-detail" *ngIf="vehicle">
+  <div class="vehicle-detail__layout">
+    <div class="vehicle-detail__left">
+      <header class="vehicle-detail__header">
+        <h1 class="vehicle-detail__title">
+          {{ vehicle.make }} {{ vehicle.model }}
+        </h1>
+        <div class="vehicle-detail__price">
+          <span class="vehicle-detail__price-amount">
+            {{ vehicle.specifications.price | currency:'USD':'symbol-narrow':'1.0-0' }}
+          </span>
+          <span class="vehicle-detail__price-note">/ día</span>
+        </div>
+      </header>
+
+      <figure class="vehicle-detail__media" *ngIf="selectedImage">
+        <img
+          class="vehicle-detail__image"
+          [src]="selectedImage"
+          [alt]="vehicle.make + ' ' + vehicle.model"
+        />
+      </figure>
+
+      <div class="vehicle-detail__thumbnails" *ngIf="vehicle.image.length > 1">
+        <button
+          type="button"
+          class="vehicle-detail__thumbnail"
+          *ngFor="let image of vehicle.image"
+          [class.vehicle-detail__thumbnail--active]="image === selectedImage"
+          (click)="selectImage(image)"
+        >
+          <img [src]="image" [alt]="vehicle.make + ' ' + vehicle.model" />
+        </button>
+      </div>
+    </div>
+
+    <aside class="vehicle-detail__right">
+      <h2 class="vehicle-detail__section-title">Technical Specification</h2>
+
+      <ul class="vehicle-detail__specs">
+        <li class="vehicle-detail__spec" *ngFor="let spec of specs">
+          <span class="vehicle-detail__spec-label">{{ spec.label }}</span>
+          <span class="vehicle-detail__spec-value">{{ spec.value }}</span>
+        </li>
+      </ul>
+
+      <button class="vehicle-detail__cta" type="button">
+        Rent a car
+      </button>
+    </aside>
+  </div>
+
+  <section class="vehicle-detail__equipment">
+    <h2 class="vehicle-detail__section-title">Car Equipment</h2>
+    <div class="vehicle-detail__equipment-columns">
+      <ul class="vehicle-detail__equipment-column" *ngFor="let column of equipmentColumns">
+        <li *ngFor="let item of column">
+          <span class="vehicle-detail__equipment-check">✓</span>
+          <span>{{ item }}</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+</section>

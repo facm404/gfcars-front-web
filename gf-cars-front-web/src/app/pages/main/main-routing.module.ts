@@ -17,7 +17,7 @@ const routes: Routes = [
     path: 'vehicles', component: VehiclesMainComponent,
     children: [
       { path: 'all', component: AllVehiclesComponent },
-      { path: 'detail', component: DetailVehiclesComponent },
+      { path: 'detail/:id', component: DetailVehiclesComponent },
       { path: '**', redirectTo: 'all' },
 
     ]
